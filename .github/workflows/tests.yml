@@ -1,0 +1,31 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.8", "3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Run the test suite
+        run: python -m unittest discover -s tests -v
+      - name: Run the tool against the sample files
+        # The samples contain a deliberate --max-change violation, so the tool
+        # exits 1 by design. Anything else is a real failure.
+        run: |
+          python shopify_repricer.py examples/sample_export.csv examples/sample_costs.csv \
+            -o /tmp/updated.csv || test $? -eq 1
+      - name: Check the import file came out
+        run: |
+          test -s /tmp/updated.csv
+          head -1 /tmp/updated.csv | grep -q '^Handle,Title,Option1 Name,'

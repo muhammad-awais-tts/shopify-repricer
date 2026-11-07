@@ -1,0 +1,11 @@
+Handle,Title,Body (HTML),Vendor,Published,Option1 Name,Option1 Value,Variant SKU,Variant Inventory Qty,Variant Price,Variant Compare At Price,Image Src,Cost per item,Status
+harborline-canvas-tote,Canvas Day Tote,<p>An invented tote bag.</p>,Harborline Goods,TRUE,Size,One Size,400101,18,38.00,0,https://example.com/tote.jpg,20.00,active
+harborline-canvas-tote,,,,TRUE,,,,,,,https://example.com/tote-back.jpg,,
+fernwood-ceramic-mug,Ceramic Pour Mug,<p>An invented mug.</p>,Fernwood Supply,TRUE,Size,350 ml,'400201,40,24.00,0,https://example.com/mug.jpg,9.00,active
+fernwood-ceramic-mug,,,,TRUE,,500 ml,'400202,22,29.00,0,,11.00,
+tallgrass-linen-napkins,Linen Dinner Napkins,<p>Invented napkins.</p>,Tallgrass Mill,TRUE,Set,Set of 4,400301,12,30.00,37.50,https://example.com/napkins.jpg,18.00,active
+tallgrass-linen-napkins,,,,TRUE,,Set of 8,,6,54.00,0,,,
+harborline-field-cap,Waxed Field Cap,<p>An invented cap.</p>,Harborline Goods,TRUE,Size,One Size,400401,31,25.00,0,https://example.com/cap.jpg,14.00,active
+fernwood-trail-bottle,Trail Water Bottle,<p>An invented bottle.</p>,Fernwood Supply,TRUE,Size,750 ml,'400501,55,36.00,0,https://example.com/bottle.jpg,16.00,active
+tallgrass-wool-throw,Wool Throw Blanket,<p>An invented blanket.</p>,Tallgrass Mill,TRUE,Size,One Size,400601,9,120.00,150.00,https://example.com/throw.jpg,,active
+harborline-shop-apron,Shop Apron,<p>An invented apron.</p>,Harborline Goods,TRUE,Size,One Size,400701,14,44.00,0,https://example.com/apron.jpg,,active
